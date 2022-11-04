@@ -45,13 +45,23 @@ html {
     margin-right: 8px;
 }
 
+.contact-inf {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.col-full {
+    width: 100%;
+}
+
 .col-half {
     width: 50%;
 }
 
 .col-third {
-    /* width: 33.33333%; */
-    width: calc(94% / 3);
+    width: calc(100%/3);
+
+    /* width: calc((100% - 16px)/4); */
 }
 
 #main{
@@ -401,6 +411,11 @@ html {
     color: #2196F3;
 }
 
+/* Contact from */
+.contact-content {
+    margin-top: 48px;
+}
+
 @keyframes modalFadeIn {
     from {
         opacity: 0;
@@ -411,3 +426,4 @@ html {
         transform: translateY(0);
     }
 }
+
