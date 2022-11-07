@@ -113,9 +113,9 @@ html {
     width: calc(100%/3);
 }
 
-#main{
+/* #main{
 
-}
+} */
 
 #header{
     position: fixed;
@@ -125,6 +125,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    /* overflow: hidden; Khi đối tượng con bị vượt quá nó thì hidden */
 }
 
 #nav {
@@ -136,8 +137,11 @@ html {
 }
 
 #nav li {
-    display: inline-block;
     position: relative;
+}
+
+#nav > li {
+    display: inline-block;
 }
 
 #nav > li > a {
@@ -183,6 +187,14 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px ;
@@ -193,6 +205,15 @@ html {
     background-color: #f44336;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -227,15 +248,18 @@ html {
     margin-top: 25px;
 }
 
-#content{
+/* #content{
 
-}
+} */
 
 #content .content-section {
     width:800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -260,7 +284,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -312,7 +336,7 @@ html {
 
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }    
 
 .place-img {
