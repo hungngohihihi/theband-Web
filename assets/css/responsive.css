@@ -1,23 +1,60 @@
 /* PC */
 @media (min-width: 1024px) {
-    .mobile {
 
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-submit-btn{
+        font-size: 16px;
+    }
+
+    .socials-list {
+        font-size: 48px;
+    }
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block ;
     }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    .mobile {
 
-    }
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
+    .s-full-width, 
     .s-col-full{
-        width: 100%;;
+        width: 100% !important;
     }
 
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
 
     #header {
         overflow: hidden;
@@ -59,5 +96,9 @@
 
     #content .member-img {
         width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 32px;
     }
 }

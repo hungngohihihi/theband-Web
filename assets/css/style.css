@@ -47,6 +47,9 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }    
 
 .btn:hover {
@@ -61,6 +64,10 @@ html {
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
 }
 
 .row {
@@ -88,7 +95,15 @@ html {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
 
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {
