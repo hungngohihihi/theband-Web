@@ -42,14 +42,51 @@
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
                 </div>
-
             </div>
 
             <div id="slider">
+
+                <div class="w3-content w3-section">
+                    <img class="mySlides" src="./assets/img/slider/slider1.jpg" style="width:100%">
+                    <img class="mySlides" src="./assets/img/slider/slider2.jpg" style="width:100%">
+                    <img class="mySlides" src="./assets/img/slider/slider3.jpg" style="width:100%">
+                </div>
+                
                 <div class="text-content">
                     <h2 class="text-heading">Chicago</h2>
                     <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
                 </div>
+
+                <div class="text-content">
+                    <h2 class="text-heading">Los Angeles</h2>
+                    <div class="text-description">We had the best time playing at Venice Beach!</div>
+                </div>
+
+                <div class="text-content">
+                    <h2 class="text-heading">New York</h2>
+                    <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+                </div>
+
+                <script>
+                    var myIndex = 0;
+                    carousel();
+                  
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        var y = document.getElementsByClassName("text-content");
+
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";  
+                          y[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        y[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 4000); // Change image every 4 seconds
+                    }
+                </script>
             </div>
 
             <div id="content">
@@ -72,8 +109,7 @@
                         <div class="col col-third s-col-full mt-32 text-center ">
                             <p class="member-name">Name</p>
                             <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
-                        </div>
-                        
+                        </div>    
                     </div>
                 </div>
 
@@ -161,7 +197,6 @@
                 </div>
             </div>
             <div class="img-footer">
-                <!-- <img src="./assets/css/img/footer.jpg" alt="" > -->
             </div>
         </div>
             </div>
