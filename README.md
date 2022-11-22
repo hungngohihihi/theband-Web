@@ -10,8 +10,8 @@
 8. Current version: Updated with responsive and slider.
 9. Current limitations: Only the interface, not yet interacting with the database.
 10. Future development plan:
-      -Search function.
-      -Develop more backend.
-      -Connect to Database.
-      -Add more user interaction functions.
+      - Search function.
+      - Develop more backend.
+      - Connect to Database.
+      - Add more user interaction functions.
 ```
